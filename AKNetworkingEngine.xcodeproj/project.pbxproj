@@ -15,6 +15,7 @@
 		8731CEC21CC6245B001F473C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8731CEC01CC6245B001F473C /* LaunchScreen.storyboard */; };
 		8731CECD1CC6245B001F473C /* AKNetworkingEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731CECC1CC6245B001F473C /* AKNetworkingEngineTests.m */; };
 		8731CED81CC6245B001F473C /* AKNetworkingEngineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731CED71CC6245B001F473C /* AKNetworkingEngineUITests.m */; };
+		8731CEE81CC62554001F473C /* AKNetworkingEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731CEE71CC62554001F473C /* AKNetworkingEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8731CED31CC6245B001F473C /* AKNetworkingEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKNetworkingEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8731CED71CC6245B001F473C /* AKNetworkingEngineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKNetworkingEngineUITests.m; sourceTree = "<group>"; };
 		8731CED91CC6245B001F473C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8731CEE61CC62554001F473C /* AKNetworkingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNetworkingEngine.h; sourceTree = "<group>"; };
+		8731CEE71CC62554001F473C /* AKNetworkingEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNetworkingEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		8731CEB11CC6245B001F473C /* AKNetworkingEngine */ = {
 			isa = PBXGroup;
 			children = (
+				8731CEE51CC624DC001F473C /* AKNetworkingEngine */,
 				8731CEB51CC6245B001F473C /* AppDelegate.h */,
 				8731CEB61CC6245B001F473C /* AppDelegate.m */,
 				8731CEB81CC6245B001F473C /* ViewController.h */,
@@ -138,6 +142,15 @@
 				8731CED91CC6245B001F473C /* Info.plist */,
 			);
 			path = AKNetworkingEngineUITests;
+			sourceTree = "<group>";
+		};
+		8731CEE51CC624DC001F473C /* AKNetworkingEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8731CEE61CC62554001F473C /* AKNetworkingEngine.h */,
+				8731CEE71CC62554001F473C /* AKNetworkingEngine.m */,
+			);
+			path = AKNetworkingEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8731CEBA1CC6245B001F473C /* ViewController.m in Sources */,
+				8731CEE81CC62554001F473C /* AKNetworkingEngine.m in Sources */,
 				8731CEB71CC6245B001F473C /* AppDelegate.m in Sources */,
 				8731CEB41CC6245B001F473C /* main.m in Sources */,
 			);
@@ -415,7 +429,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AKNetworkingEngine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aking.AKNetworkingEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +442,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AKNetworkingEngine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aking.AKNetworkingEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
