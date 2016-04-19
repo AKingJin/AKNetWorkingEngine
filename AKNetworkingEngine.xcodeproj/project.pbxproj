@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8731CEB41CC6245B001F473C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731CEB31CC6245B001F473C /* main.m */; };
+		8731CEB71CC6245B001F473C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731CEB61CC6245B001F473C /* AppDelegate.m */; };
+		8731CEBA1CC6245B001F473C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731CEB91CC6245B001F473C /* ViewController.m */; };
+		8731CEBD1CC6245B001F473C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8731CEBB1CC6245B001F473C /* Main.storyboard */; };
+		8731CEBF1CC6245B001F473C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8731CEBE1CC6245B001F473C /* Assets.xcassets */; };
+		8731CEC21CC6245B001F473C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8731CEC01CC6245B001F473C /* LaunchScreen.storyboard */; };
+		8731CECD1CC6245B001F473C /* AKNetworkingEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731CECC1CC6245B001F473C /* AKNetworkingEngineTests.m */; };
+		8731CED81CC6245B001F473C /* AKNetworkingEngineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731CED71CC6245B001F473C /* AKNetworkingEngineUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8731CEC91CC6245B001F473C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8731CEA71CC6245B001F473C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8731CEAE1CC6245B001F473C;
+			remoteInfo = AKNetworkingEngine;
+		};
+		8731CED41CC6245B001F473C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8731CEA71CC6245B001F473C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8731CEAE1CC6245B001F473C;
+			remoteInfo = AKNetworkingEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8731CEAF1CC6245B001F473C /* AKNetworkingEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKNetworkingEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8731CEB31CC6245B001F473C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8731CEB51CC6245B001F473C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8731CEB61CC6245B001F473C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8731CEB81CC6245B001F473C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8731CEB91CC6245B001F473C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8731CEBC1CC6245B001F473C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8731CEBE1CC6245B001F473C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8731CEC11CC6245B001F473C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8731CEC31CC6245B001F473C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8731CEC81CC6245B001F473C /* AKNetworkingEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKNetworkingEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8731CECC1CC6245B001F473C /* AKNetworkingEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKNetworkingEngineTests.m; sourceTree = "<group>"; };
+		8731CECE1CC6245B001F473C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8731CED31CC6245B001F473C /* AKNetworkingEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKNetworkingEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8731CED71CC6245B001F473C /* AKNetworkingEngineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKNetworkingEngineUITests.m; sourceTree = "<group>"; };
+		8731CED91CC6245B001F473C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8731CEAC1CC6245B001F473C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8731CEC51CC6245B001F473C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8731CED01CC6245B001F473C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8731CEA61CC6245B001F473C = {
+			isa = PBXGroup;
+			children = (
+				8731CEB11CC6245B001F473C /* AKNetworkingEngine */,
+				8731CECB1CC6245B001F473C /* AKNetworkingEngineTests */,
+				8731CED61CC6245B001F473C /* AKNetworkingEngineUITests */,
+				8731CEB01CC6245B001F473C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8731CEB01CC6245B001F473C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8731CEAF1CC6245B001F473C /* AKNetworkingEngine.app */,
+				8731CEC81CC6245B001F473C /* AKNetworkingEngineTests.xctest */,
+				8731CED31CC6245B001F473C /* AKNetworkingEngineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8731CEB11CC6245B001F473C /* AKNetworkingEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8731CEB51CC6245B001F473C /* AppDelegate.h */,
+				8731CEB61CC6245B001F473C /* AppDelegate.m */,
+				8731CEB81CC6245B001F473C /* ViewController.h */,
+				8731CEB91CC6245B001F473C /* ViewController.m */,
+				8731CEBB1CC6245B001F473C /* Main.storyboard */,
+				8731CEBE1CC6245B001F473C /* Assets.xcassets */,
+				8731CEC01CC6245B001F473C /* LaunchScreen.storyboard */,
+				8731CEC31CC6245B001F473C /* Info.plist */,
+				8731CEB21CC6245B001F473C /* Supporting Files */,
+			);
+			path = AKNetworkingEngine;
+			sourceTree = "<group>";
+		};
+		8731CEB21CC6245B001F473C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8731CEB31CC6245B001F473C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8731CECB1CC6245B001F473C /* AKNetworkingEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				8731CECC1CC6245B001F473C /* AKNetworkingEngineTests.m */,
+				8731CECE1CC6245B001F473C /* Info.plist */,
+			);
+			path = AKNetworkingEngineTests;
+			sourceTree = "<group>";
+		};
+		8731CED61CC6245B001F473C /* AKNetworkingEngineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8731CED71CC6245B001F473C /* AKNetworkingEngineUITests.m */,
+				8731CED91CC6245B001F473C /* Info.plist */,
+			);
+			path = AKNetworkingEngineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8731CEAE1CC6245B001F473C /* AKNetworkingEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8731CEDC1CC6245B001F473C /* Build configuration list for PBXNativeTarget "AKNetworkingEngine" */;
+			buildPhases = (
+				8731CEAB1CC6245B001F473C /* Sources */,
+				8731CEAC1CC6245B001F473C /* Frameworks */,
+				8731CEAD1CC6245B001F473C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKNetworkingEngine;
+			productName = AKNetworkingEngine;
+			productReference = 8731CEAF1CC6245B001F473C /* AKNetworkingEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8731CEC71CC6245B001F473C /* AKNetworkingEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8731CEDF1CC6245B001F473C /* Build configuration list for PBXNativeTarget "AKNetworkingEngineTests" */;
+			buildPhases = (
+				8731CEC41CC6245B001F473C /* Sources */,
+				8731CEC51CC6245B001F473C /* Frameworks */,
+				8731CEC61CC6245B001F473C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8731CECA1CC6245B001F473C /* PBXTargetDependency */,
+			);
+			name = AKNetworkingEngineTests;
+			productName = AKNetworkingEngineTests;
+			productReference = 8731CEC81CC6245B001F473C /* AKNetworkingEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8731CED21CC6245B001F473C /* AKNetworkingEngineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8731CEE21CC6245B001F473C /* Build configuration list for PBXNativeTarget "AKNetworkingEngineUITests" */;
+			buildPhases = (
+				8731CECF1CC6245B001F473C /* Sources */,
+				8731CED01CC6245B001F473C /* Frameworks */,
+				8731CED11CC6245B001F473C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8731CED51CC6245B001F473C /* PBXTargetDependency */,
+			);
+			name = AKNetworkingEngineUITests;
+			productName = AKNetworkingEngineUITests;
+			productReference = 8731CED31CC6245B001F473C /* AKNetworkingEngineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8731CEA71CC6245B001F473C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AKing;
+				TargetAttributes = {
+					8731CEAE1CC6245B001F473C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8731CEC71CC6245B001F473C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8731CEAE1CC6245B001F473C;
+					};
+					8731CED21CC6245B001F473C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8731CEAE1CC6245B001F473C;
+					};
+				};
+			};
+			buildConfigurationList = 8731CEAA1CC6245B001F473C /* Build configuration list for PBXProject "AKNetworkingEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8731CEA61CC6245B001F473C;
+			productRefGroup = 8731CEB01CC6245B001F473C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8731CEAE1CC6245B001F473C /* AKNetworkingEngine */,
+				8731CEC71CC6245B001F473C /* AKNetworkingEngineTests */,
+				8731CED21CC6245B001F473C /* AKNetworkingEngineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8731CEAD1CC6245B001F473C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8731CEC21CC6245B001F473C /* LaunchScreen.storyboard in Resources */,
+				8731CEBF1CC6245B001F473C /* Assets.xcassets in Resources */,
+				8731CEBD1CC6245B001F473C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8731CEC61CC6245B001F473C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8731CED11CC6245B001F473C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8731CEAB1CC6245B001F473C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8731CEBA1CC6245B001F473C /* ViewController.m in Sources */,
+				8731CEB71CC6245B001F473C /* AppDelegate.m in Sources */,
+				8731CEB41CC6245B001F473C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8731CEC41CC6245B001F473C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8731CECD1CC6245B001F473C /* AKNetworkingEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8731CECF1CC6245B001F473C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8731CED81CC6245B001F473C /* AKNetworkingEngineUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8731CECA1CC6245B001F473C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8731CEAE1CC6245B001F473C /* AKNetworkingEngine */;
+			targetProxy = 8731CEC91CC6245B001F473C /* PBXContainerItemProxy */;
+		};
+		8731CED51CC6245B001F473C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8731CEAE1CC6245B001F473C /* AKNetworkingEngine */;
+			targetProxy = 8731CED41CC6245B001F473C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8731CEBB1CC6245B001F473C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8731CEBC1CC6245B001F473C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8731CEC01CC6245B001F473C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8731CEC11CC6245B001F473C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8731CEDA1CC6245B001F473C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8731CEDB1CC6245B001F473C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8731CEDD1CC6245B001F473C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AKNetworkingEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aking.AKNetworkingEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8731CEDE1CC6245B001F473C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AKNetworkingEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aking.AKNetworkingEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8731CEE01CC6245B001F473C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AKNetworkingEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aking.AKNetworkingEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKNetworkingEngine.app/AKNetworkingEngine";
+			};
+			name = Debug;
+		};
+		8731CEE11CC6245B001F473C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AKNetworkingEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aking.AKNetworkingEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKNetworkingEngine.app/AKNetworkingEngine";
+			};
+			name = Release;
+		};
+		8731CEE31CC6245B001F473C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AKNetworkingEngineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aking.AKNetworkingEngineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AKNetworkingEngine;
+			};
+			name = Debug;
+		};
+		8731CEE41CC6245B001F473C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AKNetworkingEngineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aking.AKNetworkingEngineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AKNetworkingEngine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8731CEAA1CC6245B001F473C /* Build configuration list for PBXProject "AKNetworkingEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8731CEDA1CC6245B001F473C /* Debug */,
+				8731CEDB1CC6245B001F473C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8731CEDC1CC6245B001F473C /* Build configuration list for PBXNativeTarget "AKNetworkingEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8731CEDD1CC6245B001F473C /* Debug */,
+				8731CEDE1CC6245B001F473C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8731CEDF1CC6245B001F473C /* Build configuration list for PBXNativeTarget "AKNetworkingEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8731CEE01CC6245B001F473C /* Debug */,
+				8731CEE11CC6245B001F473C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8731CEE21CC6245B001F473C /* Build configuration list for PBXNativeTarget "AKNetworkingEngineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8731CEE31CC6245B001F473C /* Debug */,
+				8731CEE41CC6245B001F473C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8731CEA71CC6245B001F473C /* Project object */;
+}
