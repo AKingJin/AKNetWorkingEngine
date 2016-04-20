@@ -89,7 +89,8 @@ typedef NS_ENUM(NSUInteger, AKHttpMethodType) {
     sg_shouldAutoEncode = encode;
 }
 
-+ (BOOL)shouldEncode {
++ (BOOL)shouldEncode
+{
     return sg_shouldAutoEncode;
 }
 
