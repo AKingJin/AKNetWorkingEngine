@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AFNetworking.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,54 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    NSString *URLString = @"http://example.com";
+    NSDictionary *parameters = @{@"foo": @"bar", @"baz": @"1"};
+    
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:URLString parameters:parameters error:nil];
+//    GET URL: http://example.com?baz=1&foo=bar
+//    
+//    URL Form Parameter Encoding
+    
+    NSMutableURLRequest *request1 = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:URLString parameters:parameters error:nil];
+    NSString *str1 = [[NSString alloc] initWithData:request1.HTTPBody encoding:NSUTF8StringEncoding];;
+//    POST http://example.com/
+//    Content-Type: application/x-www-form-urlencoded
+//    baz=1&foo=bar
+//    
+//    JSON Parameter Encoding
+//    
+    NSMutableURLRequest *request2 = [[AFJSONRequestSerializer serializer] requestWithMethod:@"POST" URLString:URLString parameters:parameters error:nil];
+    NSString *str2 = [[NSString alloc] initWithData:request2.HTTPBody encoding:NSUTF8StringEncoding];;
+//    POST http://example.com/
+//    Content-Type: application/json
+//    {"foo":"bar","baz":"1"}
+    
+    NSMutableURLRequest *request3 = [[AFJSONRequestSerializer serializer] requestWithMethod:@"GET" URLString:URLString parameters:parameters error:nil];
+    
+    NSLog(@"request1.HTTPBody:%@...\n request2.HTTPBody:%@,,,",str1,str2);
+    /**
+     (lldb) po request
+     <NSMutableURLRequest: 0x7f9b2b755480> { URL: http://example.com?baz=1&foo=bar }
+     
+     (lldb) po request1
+     <NSMutableURLRequest: 0x7f9b2b755950> { URL: http://example.com }
+     
+     (lldb) po str1
+     baz=1&foo=bar
+     
+     (lldb) po request2
+     <NSMutableURLRequest: 0x7f9b2b46bd10> { URL: http://example.com }
+     
+     (lldb) po str2
+     {"foo":"bar","baz":"1"}
+     
+     (lldb) po request3
+     <NSMutableURLRequest: 0x7f9b2b753a30> { URL: http://example.com?baz=1&foo=bar }
+     
+     2016-04-20 17:13:58.442 AKNetworkingEngine[10144:255352] request1.HTTPBody:baz=1&foo=bar...
+     request2.HTTPBody:{"foo":"bar","baz":"1"},,,
+     */
     return YES;
 }
 
