@@ -553,7 +553,7 @@ typedef NS_ENUM(NSUInteger, AKHttpMethodType) {
     AFHTTPSessionManager *manager = [self manager];
     //????????是否需要configRequest，是否需要请求头、体信息？？？？？
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:absoluteUrlStr]];
-    AKAFURLSessionUpload *session =
+    __block AKAFURLSessionUpload *session =
     [manager uploadTaskWithRequest:request
                           fromFile:[NSURL fileURLWithPath:file]//坑
                           progress:progress
@@ -618,7 +618,7 @@ typedef NS_ENUM(NSUInteger, AKHttpMethodType) {
     AFHTTPSessionManager *manager = [self manager];
      //????????是否需要configRequest，是否需要请求头、体信息？？？？？
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:absoluteUrlStr]];
-    AKAFURLSessionDownload *session =
+    __block AKAFURLSessionDownload *session =
     [manager downloadTaskWithRequest:request
                             progress:progress
                          destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
