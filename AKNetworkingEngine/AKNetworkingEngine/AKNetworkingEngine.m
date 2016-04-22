@@ -74,7 +74,7 @@ typedef NS_ENUM(NSUInteger, AKHttpMethodType) {
 
 #pragma mark - 全局配置
 
-+ (void)saveAndUpdateBaseUrl:(NSString *)urlStr
++ (void)saveBaseUrl:(NSString *)urlStr
 {
     sg_privateNetworkBaseUrl = urlStr;
 }

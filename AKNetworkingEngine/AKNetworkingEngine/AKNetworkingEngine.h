@@ -73,12 +73,13 @@ typedef AKProgress AKDownloadProgress;
 
 #pragma mark - 全局配置
 /**
- *  保存并且更新网络请求的baseUrl（当已存在baseUrl时替换更新，用于处理不同接口来源于不同服务器）， 
-    通常在AppDelegate中启动时就设置一次（当不同接口的服务器不同时要再次调用）
+ *  保存网络请求的baseUrl
+    通常在AppDelegate中启动时就设置一次
+    当某个接口需要访问其他服务器时(即baseUrl不同)可直接在请求时传入绝对url，使在本次请求中baseUrl失效，
  *
  *  @param urlStr 接口服务器的基础url
  */
-+ (void)saveAndUpdateBaseUrl:(NSString *)urlStr;
++ (void)saveBaseUrl:(NSString *)urlStr;
 + (NSString *)baseUrl;
 
 /**
